@@ -1,7 +1,8 @@
 {
     "platform": "rails",
-    "platform_version": 2,
+    "platform_version": 3,
     "ruby_version": "1.9.2",
+    "yamler": "syck",
     "sql": false,
     "mongodb": true
 }
