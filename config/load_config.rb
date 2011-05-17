@@ -9,7 +9,7 @@ if !File.exist?(config_file)
   raise StandardError,  "Config file was not found"
 end
 
-options = YAML.load_file(config_file)
+options = YAML.load_file(ERB.new(IO.read(config_file)).result)
 if !options[Rails.env]
   raise "'#{Rails.env}' was not found in #{config_file}"
 end
