@@ -48,7 +48,7 @@ base: &common
     private_key: your private key
 
   exception_notification:
-    activate: true
+    activate: false
     exception_sender_address: error-notifier@example.com
     exception_recipients:
     - admin@example.com
