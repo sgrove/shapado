@@ -1,0 +1,13 @@
+development:
+  database: shapado-development
+
+test:
+  database: shapado-test
+
+production:
+  database: <%= ENV["MONGO_DB"] %>
+  host: localohost
+  port: 27017
+  user: <%= ENV["MONGO_USER"] %>
+  pass: <%= ENV["MONGO_PORT"] %>
+
